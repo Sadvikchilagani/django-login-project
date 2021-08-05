@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+}
+body{
+background-image:url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette_1258-48251.jpg?size=626&ext=jpg');
+background-position:center;
+background-size:cover;
+font-family:cursive;
+margin-top:50px;
+}
+.regform{
+width:800px;
+background-color:rgb(0,0,0,0.6);
+margin:auto;
+color:white;
+padding: 10px 0px 10px 0px;
+text-align:center;
+border-radius:15px 15px 0px 0px;
+}
+.main{
+background-color:rgb(0,0,0,0.5);
+width:800px;
+margin:auto;
+}
+.name{
+margin-left:35px;
+margin-top:5px;
+width:125px;
+color:white;
+font-size:25px;
+font-weight:700;
+
+}
+.firstname{
+position:relative;
+left:200px;
+top:-20px;
+line-height:30px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+}
+.lastname{
+position:relative;
+left:217px;
+top:-20px;
+line-height:30px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+}
+.Email{
+position:relative;
+left:200px;
+top:-35px;
+line-height:30px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+}
+.qualification{
+position:relative;
+left:200px;
+top:-35px;
+line-height:30px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+}
+.number{
+position:relative;
+left:200px;
+top:-35px;
+line-height:30px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+}
+.option{
+position:relative;
+left:200px;
+top:-35px;
+line-height:30px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+}
+.radio{
+position:relative;
+left:200px;
+top:-35px;
+line-height:30px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+}
+.name1{
+position:relative;
+left:200px;
+top:-35px;
+line-height:30px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+color:white;
+}
+.name2{
+position:relative;
+left:200px;
+top:-35px;
+line-height:30px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+color:white;
+}
+button{
+background-color:#3BAF9F;
+display:block;
+margin:20px 0px 0px 20px
+text-align:center;
+border-radius:12px;
+border:2px solid #366473;
+padding:14px 110px;
+outline:none;
+color:white;
+cursor:pointer;
+transition:0.25px;
+}
+button:hover{
+background-colour:#5390F5;}
+</style>
+
+
+</head>
+<body>
+    <div class="regform"><h1>Registration Form</h1></div>
+    <div class="data">
+        <form action="register" method="post" >
+            {% csrf_token %}
+<div class="main">
+
+
+                <h2 class="name">Name</h2>
+                <input class="firstname" type="text" name="first_name" placeholder="FIRSTNAME">
+                <input class="lastname" type="text" name="last_name" placeholder="LASTNAME">
+
+
+                <h2 class="name">DOB</h2>
+                <input class="Email" type="date" name="birth" >
+
+
+                <h2 class="name">Email</h2>
+                <input class="Email" type="email" name="email" placeholder="Avcd@gmail.com">
+                <h2 class="name">Phone</h2>
+                <input class="number" type="tel" name="p_number" placeholder="+91 2345678911">
+                <h2 class="name">Blood Group</h2>
+                <select class="option" name="subject">
+                    <option disabled="disabled" selected="selected" style="font-size:16px;" >choose option</option>
+                    <option>A+ve</option>
+                    <option>A-ve</option>
+                    <option>B+ve</option>
+                    <option>B-ve</option>
+                    <option>O+ve</option>
+                    <option>O-ve</option>
+                    <option>AB+ve</option>
+                    <option>AB-ve</option>
+                </select>
+                <h2 class="name">Location</h2>
+               <input class="number" type="text" name="location" placeholder="  Live Location">
+
+                <h2 class="name">Gender</h2>
+
+
+<input class="radio" type="radio" name="RADIO1"> <label class="name1"> male</label>
+
+<input class ="radio" type="radio" name="RADIO1"> <label class="name2">female</label><br>
+                    <h2 class="name">Password</h2>
+                <input class="Email" type="password" name="password1" placeholder="Password">
+                <h2 class="name">Confirm Password</h2>
+                <input class="number" type="password" name="password2" placeholder="Confirm Password">
+                    <h2 class="name">username</h2>
+                <input class="number" type="text" name="username" placeholder="UserName">
+
+             <center>  <button type="submit"> Register</button></center>
+</div>
+        </form>
+</body>
+</html>

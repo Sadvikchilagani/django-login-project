@@ -1,0 +1,124 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+     <meta name="viewport" content="width=device-width, initial-scale=2">
+<style>
+* {
+    box sizing: border-box; }
+body{
+ font-family: Arial;
+  padding: 10px;
+  background: #FFFFE0;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+.header h1 {
+  font-size: 30px;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #191970;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #2ECCFA;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.fakeimg {
+  width: 100%;
+  padding: 3px;
+}
+footer {
+  background-color: #0B0B61;
+  padding: 0px;
+  text-align: center;
+}
+.heading{
+float:center;
+font-family: 'Brush Script MT', cursive;
+}
+</style>
+</head>
+<body>
+<div class="header">
+
+<div class="topnav">
+  <a href="#">Hello {{user.first_name}}</a>
+
+  <a href="logout" style="float:right">Logout</a>
+</div>
+    <div class="heading">
+     <a href="https://www.studyadda.com/exams/1st-class/32">   <img src="https://1.bp.blogspot.com/-o3nT_S7ju6c/YAbanSQIDaI/AAAAAAAADzk/BHOsWpNZSx04rsPNcQEIgc9zH7n9-ZNTACPcBGAYYCw/s300/Class%2B1.jpg"  style="padding: 10px; float: left;"  width="300" height="300"></a>
+
+
+
+
+ <a href="https://www.studyadda.com/exams/2nd-class/33"><img src="data:image/jpeg;base64,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"  style="padding: 10px; float: center;" width="300" height="300"> </a>
+
+
+
+
+ <a href="https://www.studyadda.com/exams/3rd-class/34"><img src="https://1.bp.blogspot.com/-GInM_mRl-oY/YAbaoAGtzNI/AAAAAAAADzc/x1rTofrOa6c2MtHErrc3IX9FbV_2a8AsgCPcBGAYYCw/s300/Class%2B3.jpg"  style="padding: 10px; float:right;" width="300" height="300"> </a>
+<br>
+<br>
+ <a href="https://www.studyadda.com/exams/4th-class/35"><img src="https://1.bp.blogspot.com/-aP5CXiL_g4A/YAban8nCJoI/AAAAAAAADzU/aP6byRKFlukCEsoOwre7RTV8upm-z48iQCPcBGAYYCw/s300/Class%2B4.jpg" style="padding: 10px; float: left;" width="300" height="300"> </a>
+
+
+
+
+        <a href="https://www.studyadda.com/exams/5th-class/36"><img src="https://1.bp.blogspot.com/-sS6bRLOZkz8/YAbaoBgpVjI/AAAAAAAADzg/HwAn0fDKLg8PpBzJSHcuELb6ECawzd0aACPcBGAYYCw/s300/Class%2B5.jpg" style="padding: 10px; float: center;" width="300" height="300"></a>
+
+
+
+
+        <a href="https://www.studyadda.com/exams/6th-class/37"><img src="https://1.bp.blogspot.com/-a_GQa8YYqgI/YAbaonZS-SI/AAAAAAAADzY/1nxFYIVroCse1QLbTRRZGavu9pWMOXYrgCPcBGAYYCw/s300/Class%2B6.jpg"  style="padding: 10px; float:right;" width="300" height="300"></a>
+<br>
+    </div>
+    <footer>
+  <p>****</p>
+</footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
